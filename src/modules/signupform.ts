@@ -234,7 +234,7 @@ export default class SignupForm {
                   contents: res.text,
                   height: .1,
                   anchor: MRE.TextAnchorLocation.MiddleLeft,
-                  color: MRE.Color3.White()
+                  color: MRE.Color3.White()                  
                 }
               }
             })
