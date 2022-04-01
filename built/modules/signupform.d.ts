@@ -15,7 +15,6 @@ export default class SignupForm {
     private infoText;
     cleanup(): void;
     constructor(context: MRE.Context);
-    private spawnTargetObjects;
     started(): Promise<void>;
     private eraseDrawObjects;
     private createFormSurface;

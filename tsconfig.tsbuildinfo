@@ -1192,8 +1192,8 @@
         "affectsGlobalScope": false
       },
       "./src/modules/signupform.ts": {
-        "version": "e9c3cf24e9214724dd35e12db9f18184e1f5510ceff63f43b10676f1ac50df8e",
-        "signature": "4daf50100acee3a35d390be7d22f17453e4572e995ba373deb44250557aa68ee",
+        "version": "7e9ec161805343cb4a075f20fabef4a7876377f61a5fe75f6e4997520bbcd22f",
+        "signature": "375bc33e18eb0ee18ca64609811b2656af54081130198441ed5737cca4592684",
         "affectsGlobalScope": false
       },
       "./src/app.ts": {
