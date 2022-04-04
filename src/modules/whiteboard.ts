@@ -1,4 +1,4 @@
-import * as MRE from "@microsoft/mixed-reality-extension-sdk";
+/* import * as MRE from "@microsoft/mixed-reality-extension-sdk";
 
 export default class WhiteBoard {
   private assets: MRE.AssetContainer;
@@ -184,3 +184,4 @@ export default class WhiteBoard {
     eraseButtonBehavior.onClick((_, __) => this.eraseDrawObjects());
   }
 }
+*/
