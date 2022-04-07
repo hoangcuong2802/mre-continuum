@@ -9,7 +9,7 @@ export default class SignupForm {
     private assets: MRE.AssetContainer;
 
     public expectedResultDescription = "Fill in the signup form";
-  
+    private userId: MRE.Guid;
     private drawSurface: MRE.Actor;
     private eraseButton: MRE.Actor;
     private surfaceBehavior: MRE.ButtonBehavior;
@@ -167,8 +167,7 @@ export default class SignupForm {
             position: { x: 0.7, y: 1.55, z: 0 }
           }
         },
-        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } },
-        exclusiveToUser: user.id
+        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } }
       }
      });
 
@@ -190,7 +189,7 @@ export default class SignupForm {
                   anchor: MRE.TextAnchorLocation.MiddleLeft,
                   color: MRE.Color3.White()
                 },
-                exclusiveToUser: user.id  
+                exclusiveToUser: this.userId
               }
             })
             //this.infoText.text.contents = this.resultMessageFor(res.text);
@@ -214,8 +213,7 @@ export default class SignupForm {
             position: { x: 0.7, y: 1.225, z: 0 }
           }
         },
-        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } },
-        exclusiveToUser: user.id
+        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } }
       }
      });
 
@@ -238,7 +236,7 @@ export default class SignupForm {
                   anchor: MRE.TextAnchorLocation.MiddleLeft,
                   color: MRE.Color3.White()                  
                 },
-                exclusiveToUser: user.id
+                exclusiveToUser: this.userId
               }
             })
             //this.infoText.text.contents = this.resultMessageFor(res.text);
@@ -264,8 +262,7 @@ export default class SignupForm {
             position: { x: 0.7, y: 0.9, z: 0 }
           }
         },
-        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } },
-        exclusiveToUser: user.id
+        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } }
       }
     });
 
@@ -287,7 +284,7 @@ export default class SignupForm {
                   anchor: MRE.TextAnchorLocation.MiddleLeft,
                   color: MRE.Color3.White()
                 },
-                exclusiveToUser: user.id
+                exclusiveToUser: this.userId
               }
             })
             //this.infoText.text.contents = this.resultMessageFor(res.text);
