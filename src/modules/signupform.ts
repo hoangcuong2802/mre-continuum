@@ -185,6 +185,7 @@ export default class SignupForm {
                 name: 'ResultLabel',
                 parentId: this.eraseButton.id,
                 transform: { local: { position: { x: -2.0, y: 0.2, z: -0.1 } } },
+                exclusiveToUser: user.id,  
                 text: {
                   contents: res.text,
                   height: .1,
@@ -230,6 +231,7 @@ export default class SignupForm {
                 name: 'ResultLabel',
                 parentId: this.eraseButton.id,
                 transform: { local: { position: { x: -2.0, y: -.1, z: -0.1 } } },
+                exclusiveToUser: user.id,
                 text: {
                   contents: res.text,
                   height: .1,
@@ -277,6 +279,7 @@ export default class SignupForm {
                 name: 'ResultLabel',
                 parentId: this.eraseButton.id,
                 transform: { local: { position: { x: -2.0, y: -0.45, z: -0.1  } } },
+                exclusiveToUser: user.id,
                 text: {
                   contents: res.text,
                   height: .1,
