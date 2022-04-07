@@ -170,8 +170,6 @@ export default class SignupForm {
         collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } }
       }
      });
-     nameButton.setBehavior(MRE.ButtonBehavior).onClick(user => {    
-    });
 
     nameButton.setBehavior(MRE.ButtonBehavior).onClick(user => {
       user.prompt(`
@@ -185,13 +183,13 @@ export default class SignupForm {
                 name: 'ResultLabel',
                 parentId: this.eraseButton.id,
                 transform: { local: { position: { x: -2.0, y: 0.2, z: -0.1 } } },
-                exclusiveToUser: user.id,  
                 text: {
                   contents: res.text,
                   height: .1,
                   anchor: MRE.TextAnchorLocation.MiddleLeft,
                   color: MRE.Color3.White()
-                }
+                },
+                exclusiveToUser: user.id  
               }
             })
             //this.infoText.text.contents = this.resultMessageFor(res.text);
@@ -231,13 +229,14 @@ export default class SignupForm {
                 name: 'ResultLabel',
                 parentId: this.eraseButton.id,
                 transform: { local: { position: { x: -2.0, y: -.1, z: -0.1 } } },
-                exclusiveToUser: user.id,
+
                 text: {
                   contents: res.text,
                   height: .1,
                   anchor: MRE.TextAnchorLocation.MiddleLeft,
                   color: MRE.Color3.White()                  
-                }
+                },
+                exclusiveToUser: user.id
               }
             })
             //this.infoText.text.contents = this.resultMessageFor(res.text);
@@ -279,13 +278,13 @@ export default class SignupForm {
                 name: 'ResultLabel',
                 parentId: this.eraseButton.id,
                 transform: { local: { position: { x: -2.0, y: -0.45, z: -0.1  } } },
-                exclusiveToUser: user.id,
                 text: {
                   contents: res.text,
                   height: .1,
                   anchor: MRE.TextAnchorLocation.MiddleLeft,
                   color: MRE.Color3.White()
-                }
+                },
+                exclusiveToUser: user.id
               }
             })
             //this.infoText.text.contents = this.resultMessageFor(res.text);
