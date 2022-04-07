@@ -167,7 +167,8 @@ export default class SignupForm {
             position: { x: 0.7, y: 1.55, z: 0 }
           }
         },
-        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } }
+        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } },
+        exclusiveToUser: user.id
       }
      });
 
@@ -213,7 +214,8 @@ export default class SignupForm {
             position: { x: 0.7, y: 1.225, z: 0 }
           }
         },
-        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } }
+        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } },
+        exclusiveToUser: user.id
       }
      });
 
@@ -262,7 +264,8 @@ export default class SignupForm {
             position: { x: 0.7, y: 0.9, z: 0 }
           }
         },
-        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } }
+        collider: { geometry: { shape: MRE.ColliderType.Box, size: { x: 0.5, y: 0.5, z: 0.5 } } },
+        exclusiveToUser: user.id
       }
     });
 
